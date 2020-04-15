@@ -1,4 +1,7 @@
 {
+  "resolutions": {
+    "minimist": "^1.2.5"
+  },
   "name": "nodejs-sqlite3-sequalize",
   "version": "1.0.0",
   "description": "",
@@ -7,7 +10,8 @@
     "babel-node": "babel-node src/index.js",
     "dev": "nodemon --exec npm run babel-node",
     "build": "./node_modules/.bin/babel src --out-dir dist",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "preinstall": "npx npm-force-resolutions"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +27,7 @@
     "@babel/core": "^7.9.0",
     "@babel/node": "^7.8.7",
     "@babel/preset-env": "^7.9.5",
+    "minimist": "^1.2.5",
     "nodemon": "^2.0.2"
   }
 }
